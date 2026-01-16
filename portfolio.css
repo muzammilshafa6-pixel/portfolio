@@ -139,9 +139,7 @@ nav ul li:hover::after {
   width: 65%;
 }
 
-
 /* SECTION STATRTING */
-
 section {
   display: flex;
   flex-direction: column;
@@ -151,18 +149,16 @@ section {
 section .top-section {
   display: flex;
   background: url("Images/muzammil-top.jpg") right/contain no-repeat;
-  /* background-position: right;
-  background-size: contain; */
   height: 100vh;
   justify-content: left;
   align-items: center;
-
 }
 
 section .top-section .welcome-text {
   flex-direction: column;
   text-align: center;
   margin: 0 0 30vh 10vh;
+ 
 }
 
 section .top-section .welcome-text h1,
@@ -205,7 +201,6 @@ section .top-section .welcome-text p:hover {
 section .middle-1-section {
   display: flex;
 
-
 }
 
 section .middle-1-section .background {
@@ -222,6 +217,9 @@ section .middle-1-section .about-me-outer {
   display: flex;
   align-items: center;
   justify-content: left;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 
 }
 
@@ -304,8 +302,8 @@ section .middle-2-section {
   flex-direction: column;
   padding-top: 100px;
 
-
 }
+
 
 section .middle-2-section .middle-2-section-project-h2 {
   padding: 10px 0;
@@ -324,6 +322,9 @@ section .middle-2-section .project-rows {
   gap: 10px;
   align-items: center;
   justify-content: center;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 
 
 }
@@ -377,6 +378,7 @@ section .bottom-section {
   flex-wrap: wrap;
 }
 
+
 section .bottom-section h2 {
   padding: 10px 0;
   margin-bottom: 30px;
@@ -389,6 +391,9 @@ section .bottom-section h2 {
 section .bottom-section .my-goal-p {
   display: flex;
   gap: 10px;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 }
 
 section .bottom-section p {
@@ -424,6 +429,7 @@ footer {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+
 }
 
 #contact {
@@ -447,6 +453,9 @@ footer .footer-left h3 {
   color: white;
   transition: var(--transition);
   border: none;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 
 }
 
@@ -467,6 +476,9 @@ footer .footer-left p {
   background-color: black;
   color: white;
   transition: var(--transition);
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
 
@@ -485,6 +497,9 @@ footer .footer-left .socials {
   border-radius: 20px;
   background-color: black;
   transition: var(--transition);
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 
 }
 
@@ -515,6 +530,9 @@ footer .footer-right form fieldset {
   flex-direction: column;
   background-color: black;
   color: white;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 }
 
 
@@ -577,6 +595,9 @@ footer .footer-center .footer-center-quote {
   border-radius: 20px;
   background-color: #000000;
   color: white;
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
 
 }
 
@@ -597,6 +618,9 @@ footer .footer-center .card {
   color: white;
   line-height: 1.5em;
   transition: var(--transition);
+  animation: fadeup 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
 
 }
 
@@ -610,6 +634,7 @@ footer .footer-bottom {
   width: 100%;
   margin-top: 30px;
   text-align: center;
+
 
 }
 
@@ -632,6 +657,18 @@ footer .footer-bottom .footer-rights {
 
   100% {
     transform: rotateY(360deg);
+  }
+}
+
+@keyframes fadeup {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
